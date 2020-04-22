@@ -49,6 +49,7 @@ func main() {
 				"Sunday", "Sonntag")
 
 			if e.Sender.Channel.Name != "Küche" {
+				e.Sender.Send(e.Sender.Name + "! Komme doch bitte in die Küche!")
 				return
 			}
 
