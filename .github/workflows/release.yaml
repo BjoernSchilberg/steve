@@ -1,26 +1,16 @@
-# .github/workflows/release.yaml
+  # .github/workflows/release.yaml
 
 on: release
 name: upload
 
 jobs:
-  releases-matrix:
-    name: Release Go Binary
+  release-linux-amd64:
+    name: release linux/amd64
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        # build and publish in parallel: linux/386, linux/amd64, windows/386, windows/amd64, darwin/386, darwin/amd64
-        #goos: [linux, windows, darwin]
-        #goarch: ["386", amd64]
-        goos: [linux]
-        goarch: [amd64]
     steps:
     - uses: actions/checkout@v2
     - uses: bjoernschilberg/go-release-action@master
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        goos: ${{ matrix.goos }}
-        goarch: ${{ matrix.goarch }}
-        goversion: "https://dl.google.com/go/go1.14.2.linux-amd64.tar.gz"
-        #project_path: "./cmd/test-binary"
-        #binary_name: "test-binary"
+        goos: linux
+        goarch: amd64
