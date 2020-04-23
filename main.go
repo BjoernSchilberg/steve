@@ -23,7 +23,7 @@ func main() {
 	gumbleutil.Main(gumbleutil.AutoBitrate, gumbleutil.Listener{
 		Connect: func(e *gumble.ConnectEvent) {
 			user := e.Client.Users.Find("steve")
-			user.SetComment("Send message ... KAFFEE ...")
+			user.SetComment("Send message ... KAFFEE ...<br>Source: <a href='https://github.com/BjoernSchilberg/steve/'>https://github.com/BjoernSchilberg/steve</a>")
 		},
 
 		TextMessage: func(e *gumble.TextMessageEvent) {
