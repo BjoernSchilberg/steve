@@ -23,6 +23,25 @@
 go build
 ```
 
+## Help
+
+```shell
+$ ./steve_v1.0.0_linux_amd64 -h
+
+ -certificate string
+    	user certificate file (PEM)
+  -insecure
+    	skip server certificate verification
+  -key string
+    	user certificate key file (PEM)
+  -password string
+    	client password
+  -server string
+    	Mumble server address (default "localhost:64738")
+  -username string
+    	client username (default "gumble-bot")
+```
+
 ## Start
 
 ```shell
