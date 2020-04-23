@@ -53,6 +53,18 @@ $ ./steve_v1.0.0_linux_amd64 -h
 go build
 ```
 
+## Build for windows under Linux
+
+Requirement: [mingw-w64](http://mingw-w64.org)
+
+```shell
+apt-get install mingw-w64
+```
+
+```shell
+CGO_ENABLED=1 CC=x86_64-w64-mingw32-gcc CXX=x86_64-w64-mingw32-g++ GOOS=windows go build -o steve.exe
+```
+
 ## Certificate handling
 
 ### Convert p12 to pem
