@@ -1,6 +1,7 @@
 # Steve
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+![Build](https://github.com/BjoernSchilberg/steve/workflows/Build/badge.svg)
 
 
 
