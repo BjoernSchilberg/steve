@@ -4,11 +4,11 @@
 ![Build](https://github.com/BjoernSchilberg/steve/workflows/Build/badge.svg)
 ![GitHub release (latest by date including pre-releases)](https://img.shields.io/github/v/release/bjoernschilberg/steve?include_prereleases)
 
-
-
 - [Steve](#steve)
-  - [Build](#build)
+  - [Get latest release](#get-latest-release)
+  - [Help](#help)
   - [Start](#start)
+  - [Build manually](#build-manually)
   - [Certificate handling](#certificate-handling)
     - [Convert p12 to pem](#convert-p12-to-pem)
     - [Check](#check)
@@ -18,11 +18,9 @@
       - [Running](#running)
     - [Test sound file](#test-sound-file)
 
-## Build
+## Get latest release
 
-```shell
-go build
-```
+Get [latest release](https://github.com/BjoernSchilberg/steve/releases/latest).
 
 ## Help
 
@@ -30,23 +28,29 @@ go build
 $ ./steve_v1.0.0_linux_amd64 -h
 
  -certificate string
-    	user certificate file (PEM)
+     user certificate file (PEM)
   -insecure
-    	skip server certificate verification
+     skip server certificate verification
   -key string
-    	user certificate key file (PEM)
+     user certificate key file (PEM)
   -password string
-    	client password
+     client password
   -server string
-    	Mumble server address (default "localhost:64738")
+     Mumble server address (default "localhost:64738")
   -username string
-    	client username (default "gumble-bot")
+     client username (default "gumble-bot")
 ```
 
 ## Start
 
 ```shell
 ./steve -username steve -server localhost:64738 -key steve.key.pem -certificate steve.crt.pem
+```
+
+## Build manually
+
+```shell
+go build
 ```
 
 ## Certificate handling
