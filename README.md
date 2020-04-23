@@ -2,6 +2,7 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 ![Build](https://github.com/BjoernSchilberg/steve/workflows/Build/badge.svg)
+![GitHub release (latest by date including pre-releases)](https://img.shields.io/github/v/release/bjoernschilberg/steve?include_prereleases)
 
 
 
